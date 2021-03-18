@@ -4,14 +4,14 @@ import backArrow from "../assets/images/home/Union.png"
 
 const NavbarWrapper = styled.div`
   height: 100px;
-  background-color: rgb(22, 20, 20);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position:relative;
+  position:absolute;
   top:0;
   left:0;
+  z-index:5;
 `;
 const NavHead = styled.nav`
   width: 739px;
@@ -41,14 +41,17 @@ justify-content:center;
 align-items:center;
 `
 
-const GoBackText = styled.span`
-font-size:16px;
-color:white;
-margin-left:5px;
-`
+// const GoBackText = styled.span`
+// font-size:16px;
+// color:white;
+// margin-left:5px;
+// `
 const Navbar = () => {
   return (
     <>
+    
+
+    
       <NavbarWrapper>
         <NavHead>
           <a href="/html/">HOME</a>
@@ -60,12 +63,12 @@ const Navbar = () => {
         <a href="/python/">CONTACT US</a>
         </NavHead>
         <BackButton>
-            <div>
+            {/* <div>
                 <img src={backArrow} alt="Back Arrow"></img>
-            </div>
-            <GoBackText>
+            </div> */}
+            {/* <GoBackText>
                 GO BACK
-            </GoBackText>
+            </GoBackText> */}
         </BackButton>
       </NavbarWrapper>
     </>
